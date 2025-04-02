@@ -10,6 +10,7 @@ library(stringr)
 # load in data
 #---------
 #load in snake data
+#may need to unzip since for file size only the .zip is stored in the github
 snakes <- read.csv("copperheads/data/snakes/inat-snakes.csv") %>%
   #add in year information
   mutate(year = substr(observed_on, start = 1, stop = 4)) 
