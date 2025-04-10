@@ -1,6 +1,7 @@
 #--------------------------
 # Filter snakes to 2019+ and find out if a spatial pattern
 # exists 
+# Work in here still good for reference, but I think we're going to move off calculating % copperheads within each inat county (really dramatically influenced by how many iNat observers are in the county and...move to calculating the differences in means within broods overall? BUT I suppose in doing that we're no longer accounting at all for that counties could be like.. different in their detection ability from one another. HM.)
 #--------------------------
 
 #libraries
