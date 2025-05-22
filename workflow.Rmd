@@ -11,6 +11,9 @@ Question of interest (data framing)
 To what degree the emergence of a periodical cicada brood influences copperhead activity and population, calculated as the percent of iNat snake observations that are eastern copperheads. Similar to the paper 'Periodical Cicada Emergences Affect Masting Behavior of Oaks' want to conduct a superimposed epoch analysis to see the results of periodical cicada emergence on these snakes.
 UPDATE: I think not a superimposed epoch analysis now. The motivator for the superimposed epoch analysis is to see, importantly, WHEN the effect happens, bc they're trying to figure out if masting is delayed by periodicial cicadas, but this is a multi-year effect. In this case, I want to know if in the SAME YEAR as the cicadas we see an increase in the percent of copperheads (bc they are more active, and in hunting for cicadas may be more visible to people) or if in the YEAR AFTER CICADAS there are more copperhead observations (because of a population-level benefit -> increased fecundity leading to more copperheads being around the next year.)
 
+Questions: Are cicadas more active, and thereby more visible to people, during cicada emergence years?
+Questions: Do cicada emergences increase copperhead fecundity or survival, eg. produce a population-level benefit where there are more copperheads seen in the year following a cicada emergence?
+
 Steps are as follows:
 
 - download iNat data on all snake observations in all years within the range
@@ -42,4 +45,5 @@ Thoughts on copperheads:
 -County isn't really a unit that matters..so nor does perc county
 - the unit that matters is the brood! that's a boundary that's biologically meaningful, and a place you can ask about % copperhead vs % snakes in cicada and non-cicada years
 - should do this in a bayesian framework where my predictor is the % of observations in a brood year that are copperheads, fit a different intercept for every brood (they come from different areas with dif expectations about background copperheads), and ask if there's a different effect if cicada yr is 1 (present) or cicada yr is 0. (not present). 
+- isn't this actually not a bayesian question but instead a t-test?
 - let's not worry about things like "is there an effect in the next yr" this would be like, from a copperhead population increase in the year following cicadas. That's an interesting question but a secondary one, and the first question is one that's easier to answer, so let's do that first. this second model would be like. Just add another slope for cicada year. Have 3 options instead of binary. 
