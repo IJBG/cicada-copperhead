@@ -6,7 +6,7 @@ library(sf)
 library(dplyr)
 
 #read in cicada data
-gdb_path = "copperheads/data/cicada/S_USA.Periodical_Cicada_Brood.gdb"
+gdb_path = "copperheads/data/cicada/rawdata/S_USA.Periodical_Cicada_Brood.gdb"
 layer_name = "Periodical_Cicada_Brood"
 
 cicada <- st_read(dsn = gdb_path) %>%

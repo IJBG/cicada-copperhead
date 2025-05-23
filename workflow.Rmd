@@ -47,3 +47,6 @@ Thoughts on copperheads:
 - should do this in a bayesian framework where my predictor is the % of observations in a brood year that are copperheads, fit a different intercept for every brood (they come from different areas with dif expectations about background copperheads), and ask if there's a different effect if cicada yr is 1 (present) or cicada yr is 0. (not present). 
 - isn't this actually not a bayesian question but instead a t-test?
 - let's not worry about things like "is there an effect in the next yr" this would be like, from a copperhead population increase in the year following cicadas. That's an interesting question but a secondary one, and the first question is one that's easier to answer, so let's do that first. this second model would be like. Just add another slope for cicada year. Have 3 options instead of binary. 
+
+LMAO if there's no affect, proposed paper title:
+Only Snake to Hunt Periodical Cicadas Unaffected by Resource Boom

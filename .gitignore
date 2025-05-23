@@ -12,6 +12,7 @@ data/snakes/inat-serpentes.csv
 data/snakes/inat-snakes.csv
 data/snakes/snakes-gbif-citation.txt
 data/snakes/gbif-inat-serpentes.zip
+data/snakes/cleaned_snakes.csv
 
 # Example code in package build process
 *-Ex.R

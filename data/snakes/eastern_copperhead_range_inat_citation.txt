@@ -1,0 +1,13 @@
+
+Taxon Range for Eastern Copperhead (Agkistrodon contortrix)
+About Taxon Ranges
+
+Taxon Ranges convey the global distribution of a taxon. Taxon ranges are typically sourced from the IUCN Red List. Learn More
+Range 	A_contortrix.kml (352 KB)
+Is this an IUCN Red List range map, and if not why? 	This is not an IUCN Red List range map because that map is unsuitable
+Source 	
+Frank T. Burbrink, Timothy J. Guiher, Considering gene flow when using coalescent methods to delimit lineages of North American pitvipers of the genus Agkistrodon, Zoological Journal of the Linnean Society, Volume 173, Issue 2, February 2015, Pages 505–526, https://doi.org/10.1111/zoj.12211
+https://academic.oup.com/zoolinnean/article/173/2/505/2449780?login=true
+Description 	
+
+Manually narrowed from IUCN range map for Agkistrodon contortrix sensu lato (http://dx.doi.org/10.2305/IUCN.UK.2007.RLTS.T64297A12756101.en).
