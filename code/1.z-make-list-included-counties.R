@@ -38,7 +38,7 @@ b_counties <- snakes %>%
          included_bc = "copperhead observations")
 
 
-counties_to_include = dplyr::add_row(b_counties, a_counties) %>%
-  distinct(ST_CNTY_CODE, .keep_all = TRUE)
+counties_to_include = dplyr::add_row(b_counties, a_counties)
+#not going to remove duplicates bc I'm fine with that, just want to keep a record of why each county location is included.
 
 write.csv(counties_to_include, "data/counties_meeting_copperhead_requirements.csv")
