@@ -114,6 +114,8 @@ ggplot(data = aprjun_analysis,
   geom_point() +
   geom_smooth(method = lm, se = FALSE)
 
+t.test(aprjun_analysis$perc_copper[aprjun_analysis$emergence_year == -1], aprjun_analysis$perc_copper[aprjun_analysis$emergence_year == 1])
+
 #summarize to % copperhead by brood only in counties where copperheads have EVER been seen on iNat.
 aprjun_limcounties_analysis <- snakes %>%
   filter(apr_thru_jun == TRUE,
@@ -138,6 +140,8 @@ ggplot(data = aprjun_limcounties_analysis,
   geom_point() +
   geom_smooth(method = lm, se = FALSE)
 
+t.test(aprjun_limcounties_analysis$perc_copper[aprjun_limcounties_analysis$emergence_year == -1], aprjun_limcounties_analysis$perc_copper[aprjun_limcounties_analysis$emergence_year == 1])
+
 #------------------
 # Analysis of whole-year effect of cicada year of year before
 #------------------
@@ -161,6 +165,10 @@ ggplot(data = year_analysis,
   geom_point() +
   geom_smooth(method = lm, se = FALSE)
 
+t.test(year_analysis$perc_copper[year_analysis$emergence_year == -1], year_analysis$perc_copper[year_analysis$emergence_year == 1])
+
+
+
 #if we limit the counties..
 year_limcounties_analysis <- snakes %>%
   filter(emergence_year != 0,
@@ -182,5 +190,7 @@ ggplot(data = year_limcounties_analysis,
            color = associated_brood)) +
   geom_point() +
   geom_smooth(method = lm, se = FALSE)
+
+t.test(year_limcounties_analysis$perc_copper[year_limcounties_analysis$emergence_year == -1], year_limcounties_analysis$perc_copper[year_limcounties_analysis$emergence_year == 1])
 
 #Alright, with all that, I feel pretty confident saying that there's no effect of cicadas on how frequently people encounter copperheads / copperheads are not more active while hunting cicadas in cicada-years than the year before / no fecundity benefit boosting the number of copperheads seen in the year following a cicada emergence
