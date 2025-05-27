@@ -50,3 +50,7 @@ Thoughts on copperheads:
 
 LMAO if there's no affect, proposed paper title:
 Only Snake to Hunt Periodical Cicadas Unaffected by Resource Boom
+
+Okay 2025-05-27 done with analysis:
+Alright, with all that, I feel pretty confident saying that there's no effect of cicadas on how frequently people encounter copperheads / copperheads are not more active while hunting cicadas in cicada-years than the year before / no fecundity benefit boosting the number of copperheads seen in the year following a cicada emergence.
+Looking at the graphs both grouped (boxplot) and with each brood broken out seperately (ggplot), there's no affect either during the emergence window the year of vs year before or during the whole year year of year before, weather or not you account for the presence of counties where copperheads ought to be present but have never been recorded on iNat.

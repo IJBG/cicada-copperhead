@@ -25,7 +25,7 @@ copper <- read.csv("data/snakes/cleaned_copperheads.csv") %>%
   snakes <- clean_snakes %>%
     #rm download-native copperheads
     filter(!common_name == "Eastern Copperhead") %>%
-    #add in seperate-download copperheads, see the 0. examination of this problem for more details
+    #add in separate-download copperheads, see the 0. examination of this problem for more details
     dplyr::add_row(copper)
   
   rm(clean_snakes);rm(copper)
