@@ -22,7 +22,7 @@ of the eastern copperhead.
  returns 380,000 observations
  So, this should definetely be done through iNat instead, sorry iNat downloader, because there's a LOT of data that is missing from the GBIF filter for squamates. To the tune of 7k copperhead observations, eg GBIF says 11k, iNat says 18k
  For the multi-step iNat download, could double-check that areas weren't missed by also downloading the copperhead data and making sure it's all present in the combined iNat data. (done)
-- from the iNat data, want to make sure we don't have duplicate observations. For each species (yes, even outside of copperheads because this affects the % snakes observed that are copperheads) round lat/lon to the nearest .001 and count just unique observations for that day/county/lat-lon/species. (NOT YET DONE)
+- from the iNat data, want to make sure we don't have duplicate observations. For each species (yes, even outside of copperheads because this affects the % snakes observed that are copperheads) round lat/lon to the nearest .0001 and count just unique observations for that day/county/lat-lon/species. (done)
 - download data on the location of periodicial cicada broods (might be available from Koenig et al. 2023) (done)
 - filter snake data to within the counties that have periodical cicada broods 
 - associate snake location data with a county
@@ -53,4 +53,4 @@ Only Snake to Hunt Periodical Cicadas Unaffected by Resource Boom
 
 Okay 2025-05-27 done with analysis:
 Alright, with all that, I feel pretty confident saying that there's no effect of cicadas on how frequently people encounter copperheads / copperheads are not more active while hunting cicadas in cicada-years than the year before / no fecundity benefit boosting the number of copperheads seen in the year following a cicada emergence.
-Looking at the graphs both grouped (boxplot) and with each brood broken out seperately (ggplot), there's no affect either during the emergence window the year of vs year before or during the whole year year of year before, weather or not you account for the presence of counties where copperheads ought to be present but have never been recorded on iNat.
+Looking at the graphs both grouped (boxplot) and with each brood broken out seperately (ggplot), there's no affect either during the emergence window the year of vs year before or during the whole year year of year before, weather or not you account for the presence of counties where copperheads ought to be present but have never been recorded on iNat. T-tests also all NS
