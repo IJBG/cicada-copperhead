@@ -5,6 +5,27 @@ date: "2024-10-08"
 output: html_document
 ---
 
+--------------
+Methods
+    I downloaded all research-grade snake observations within generously approximated lat/lon boundaries of where periodical cicadas emerge in the US, and all eastern copperhead observations, as of 2024-10-09
+    
+    Separately, I downloaded a range map of periodical cicada emergences (Liebhold et al. 2013) and combined that with county boundaries from the r package tigris() to produce a data-frame of counties and their associated periodical cicada broods (1.cicada-add-county-sf.R)
+    
+    I cleaned the iNat observations by removing potential duplicates (1.clean-inat-observations.R)
+    
+    I combined my iNat observations data and my cicada-county data so every iNat observation had the associated cicada brood(s) that emerge in that county. Observations in counties where periodical cicada do not emerge were removed (1.snake-add-county.R) There were 3k observations with two associated broods, but there were no overlap issues (data/cicada/confirm_no_brood_timing_issues.csv)
+    
+    I filtered my snake observations to only counties that were a) inside the iNat range map of eastern copperheads (Burbrink & Guiher, 2015) or b) counties where copperheads had ever been observed on iNat. (1.z-make-list-included-counties)
+    
+    (2.by-brood-analysis.R) Using observations from periodical cicada emergences 2019-2024, I summarized the % of snakes observed that were copperheads by brood in the year prior and the year of periodical cicada emergence in A) April through June and B) April through the following May. In both analyses I looked for an effect across all counties where copperheads had been seen + within their range, and in only the counties where copperheads had ever been seen on iNat. There was no effect in any of the 4 analyses. See the 'diagrams/' folder for graphical results.
+----------------------------------------------
+
+
+
+
+
+
+
 Writing this in markdown so that it doesn't require code comments all the time
 
 Question of interest (data framing)
